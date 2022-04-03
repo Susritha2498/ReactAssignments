@@ -1,16 +1,19 @@
 import React from 'react';
-import './App.css';
-import landing_page from './LandingPage/landing_page'
-import post_view from './PostView/post_view';
+import {BrowserRouter,Route,Routes} from 'react-router-dom'
+import './App.css'
+import LandingPage from './LandingPage/landing_page.js';
+import PostView from './PostView/post_view.js';
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="wrapper">
-      <h1>Landing Page</h1>
-      <landing_page/>
-      <h1>Post View</h1>
-      <post_view/>
+      <Routes>
+        <Route path='*' element={<PostView/>}/>
+        <Route path='/landpage' element={<LandingPage/>}/>
+      </Routes>
     </div>
+    </BrowserRouter>
   );
 }
  
