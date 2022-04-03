@@ -1,6 +1,7 @@
 import React from "react";
 
-function Card({name,location,likes,description,PostImage,date}) {
+function Card({person}) {
+  const {name,location,likes,description,PostImage,date}=person
   return (
     <div className="card">
       <nav className="section-nav">
@@ -12,7 +13,7 @@ function Card({name,location,likes,description,PostImage,date}) {
       </nav>
       <img
         className="card-img"
-        src={PostImage}
+        src={require(`./${PostImage}`)}
         alt={"Childhood"}
       />
       <div className="Details"> 

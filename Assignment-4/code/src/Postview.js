@@ -1,18 +1,19 @@
 import React from 'react';
 import './Postview.css';
-import instaCard from './Mock-data/data.json';
+import FetchData from './Component/FetchData';
 import Card from './Component/Card';
 import NavBar from './Component/NavBar';
 
-const Postview=()=> {
+const Postview=({array})=> {
+  console.log(array)
   return (
     <div className="site-container">
+      <FetchData/>
       <NavBar/>
       <section>
-          {instaCard.data.map((person,index) => {
-        const {name,location,likes,description,PostImage,date}=person
+          {array.map((person,index) => {
         return(
-        <Card name={name} location={location} likes={likes} description={description} PostImage={PostImage} date={date} key={index}/>
+        <Card person={person} key={index}/>
         )
         })}
       </section>
