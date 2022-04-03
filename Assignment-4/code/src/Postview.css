@@ -1,24 +1,31 @@
-.site-container{
-  text-align: center;
-}
 *{
 margin:0;
 padding: 0;
 }
+
+.site-container{
+width:100%;
+height:100%;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+
 html {
-  font-size: 14px;
+font-size: 14px;
 }
 body {
-  line-height: 1.5;
-  color: black;
-  margin-top:10px;
-  box-shadow: 1px 1px 0 0 black;
+line-height: 1.5;
+color: black;
+margin-top:10px;
+box-shadow: 1px 1px 0 0 black;
 } 
 .header{
 width:100%;
 height:10%;
 display:flex;
-justify-content: space-evenly;
+justify-content: space-around;
 align-items: center;
 box-shadow:2px 2px 2px 2px rgb(84, 84, 84);
 }
@@ -36,30 +43,32 @@ height: 80%;
 margin-top:2%;
 justify-content: center;
 align-items: center;
-box-shadow: 0px 0px 1px 1px rgb(44, 44, 44);
 }
 
 .card{
 display:flex;
 flex-direction: column;
-box-shadow: 1px 1px 0 0 rgb(52, 51, 51);
+box-shadow: 1px 1px 1px 1px rgb(52, 51, 51);
 border-radius: 5px;
 width:100%;
 height:30%;
+margin-bottom: 20px;
 align-items: flex-start;
 }
 
 .section-nav{
 display: flex;
 width:100%;
+justify-content: space-between;
+align-items: center;
 }
 
 .section-nav div{
 display: flex;
-flex-direction:column ;
-justify-content: space-between;
-align-items: center;
-align-content: center;
+flex-direction:column;
+justify-content: center;
+align-items: space-around;
+padding-left: 10px;
 }
 
 .card img{
@@ -71,4 +80,37 @@ height:100%;
 display: flex;
 width:100%;
 justify-content: space-between;
+align-items: center;
+}
+
+.likeCommentBar{
+font-size: 2rem;
+display: flex;
+justify-content: flex-start;
+padding-left: 10px;
+}
+.likeCommentBar div{
+padding-right: 10px;
+}
+
+.dots{
+font-size: 2rem;
+padding-left: 5px;
+margin-right: 5px;
+}
+
+.profileName h3{
+margin-top: 10px;
+margin-bottom:5px;
+}
+
+.profileName p, .numberOfLikes{
+color: rgb(169, 161, 161);
+font-weight: bold;
+margin-bottom:10px;
+}
+
+.describe{
+word-break: break-word;
+padding:10px;
 }
