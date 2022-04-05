@@ -5,21 +5,21 @@
 "location":"Bengaluru",
 "likes":64,
 "description": "Reminiscing the childhood days#Paperboats#rainydays#Grannyvacation",
-"PostImage": "Images/Boat.jpg",
+"PostImage": "Boat.jpg",
 "date": "25 June 2021"
 },
 {"name":"Neeraj",
 "location":"Pune",
 "likes":30,
 "description": "The days of no responsibilities#sandCastles#skipSchool",
-"PostImage": "Images/Sand.jpg",
+"PostImage": "Sand.jpg",
 "date":"11 December 2021"
 },
 {"name":"Rahul",
 "location":"Hyderabad",
 "likes":30,
 "description": "Do you remember the first time you learnt to ride a bicycle#Ilearntat10",
-"PostImage": "Images/Cycle.jpg",
+"PostImage": "Cycle.jpg",
 "date":"8 August 2021"
 }
 ]

@@ -13,7 +13,7 @@ function Card({person}) {
       </nav>
       <img
         className="card-img"
-        src={require(`./${PostImage}`)}
+        src={require(`../Images/${PostImage}`)}
         alt={"Childhood"}
       />
       <div className="Details"> 
