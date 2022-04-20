@@ -9,10 +9,28 @@
 <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
 <!-- Don't use this in production: -->
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<link rel="stylesheet" href="style.css" />
+<title>Designing Web App using HTML/CSS/REACT</title>
 </head>
 <body>
-    <div id="root"></div>
+    <div id="root">
+        <div class="firstRow">
+          <div class="class-Yellow" id="y1"></div>
+          <div class="class-Yellow" id="y2"></div>
+        </div>
+
+        <div class="class-Pink" id="p1"></div>
+
+        <div class="thirdRow">
+          <div class="class-Blue" id="b1"></div>
+          <div class="class-Blue" id="b2"></div>
+          <div class="class-Blue" id="b3"></div>
+        </div>
+    </div>
+
     <script type="text/babel">
+      import React from 'react';
+      import ReactDOM from 'react-dom';
 //React Code here
  ReactDOM.render(<div></div>,document.getElementById('root'));
 
